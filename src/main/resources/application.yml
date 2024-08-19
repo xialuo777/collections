@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ssm
+    username: root
+    password: 12345
+
+
+
+mybatis:
+  configuration:
+    # Mybatis开启驼峰映射
+    mapUnderscoreToCamelCase: true
+  #自定义枚举转换器
+  type-handlers-package: com.hdu.util
